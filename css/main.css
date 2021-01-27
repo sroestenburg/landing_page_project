@@ -1,0 +1,9 @@
+/* imported css files*/
+
+@import "./container.css";
+@import "./navigation.css";
+@import "./header.css";
+@import "./card.css";
+@import "./footer.css";
+@import "./landingpage.css";
+@import "./form.css";

@@ -1,0 +1,175 @@
+/* Form*/
+
+.fourth__section{
+    grid-area: sc4;
+    
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+ 
+.form h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 25px;
+}
+
+.form-inline {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+.form-inline label {
+    margin: 5px 5px 5px 0;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    color: black;
+}
+
+.form-inline input {
+    margin: 10px 0;
+    vertical-align: middle;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd; 
+}
+
+.form-inline button {
+    padding: 10px 20px;
+    background-color:black;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+}
+
+/* landscape phones*/
+@media (min-width: 567px)and (max-width: 767px){
+
+    #email{
+        width: 200px;
+    }
+     
+    .form-inline {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+/* tablets*/
+@media (min-width: 768px)and (max-width: 991px){
+    .fourth__section{
+        grid-area: sc4;
+        margin-bottom: 60px;
+    }
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 100px auto;     
+    }
+    
+    #email{
+        width: 200px;
+    }
+     
+    .form-inline {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+/* large devices*/
+@media (min-width: 992px)and (max-width: 1199px){
+    
+    .fourth__section{
+        grid-area: sc4;
+        margin-bottom: 50px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 80px auto;     
+    }
+    
+    #email{
+        width: 400px;
+    }
+
+    .form h2{
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+@media (min-width: 1200px){
+
+    .fourth__section{
+        grid-area: sc4;
+        margin-bottom: 50px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 80px auto;     
+    }
+    
+    .form h2{
+        font-family: 'Dancing Script', cursive;
+        font-size: 35px;
+    }
+    
+    .form-inline {  
+        display: flex;
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-left: 40px;
+    }
+      
+    #email{
+        width: 400px;
+    }
+    .form-inline label {
+        margin: 5px 5px 5px 0;
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+        color: black;
+    }
+      
+    .form-inline input {
+        vertical-align: middle;
+        margin: 5px 5px 5px 0;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+      
+    .form-inline button {
+        padding: 10px 20px;
+        background-color:black;
+        border: 1px solid #ddd;
+        color: white;
+        cursor: pointer;
+    }
+}

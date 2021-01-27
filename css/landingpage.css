@@ -1,0 +1,141 @@
+
+
+
+/* ---- Base Rules ---- */
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: grey;
+}
+
+.toTop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: burlywood;
+    z-index: 99;
+    visibility: hidden;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+li.active{
+    border-bottom: 4px solid pink;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Typeography General*/
+
+
+h2 {
+    border-bottom: 2px solid#7e7f81;
+    font-family: 'Oxygen', Sans-Serif;
+    font-size: 2.25em;
+    color:#7e7f81;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+p {
+    line-height: 1.6em;
+    color: rgb(129, 115, 115);
+    font-size: large;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin: 15px;
+    
+}
+
+/* Section Styles */
+
+.second__section{
+    grid-area: sc2;
+    width: 93%;
+    margin: auto;
+}
+
+.two h2{
+    text-align: right;
+}
+
+.second__section button {
+    text-align: center;
+    color:#797069;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #ffebeb;
+    border: none;       
+}
+
+.paella__image{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../images/paella.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+
+/* landscape phones */
+@media (min-width: 567px)and (max-width: 767px){
+    .paella__image{
+        display: flex;
+        flex-direction: row;
+        background-image: url('../images/paella.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* tablets*/
+@media (min-width: 768px)and (max-width: 991px){
+    .paella__image{
+        display: flex;
+        flex-direction: row;
+        background-image: url('../images/paella.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+    }
+}
+
+/* large devices*/
+@media (min-width: 992px)and (max-width: 1199px){
+    .paella__image{
+        display: flex;
+        flex-direction: row;
+        background-image: url('../images/paella.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+    }
+}
+
+/* extra large devices*/
+@media (min-width: 1200px){
+    .paella__image{
+        display: flex;
+        flex-direction: row;
+        background-image: url('../images/paella.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 800px;
+    }
+}
+
+
+
+

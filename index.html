@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Landing_page Project</title>
+  <!-- Load Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Dancing+Script:wght@400;600&display=swap|Quicksand&display=swap|Merriweather&display=swap"
+    rel="stylesheet">
+  <!-- Load Styles -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <button id="topBtn" class="toTop"> Top</button>
+
+
+  <div class="container">
+    <nav >
+      <div class="navigation">
+        <div id="navLeft" class="topnav__left">
+          <div class="nav__title">
+            <h1>Travel Guide Spain</h1>
+          </div>
+        </div>
+        <div id="navbar" class="topnav__right">
+          <div class="navbar__menu">
+            <ul id="navbar__list"></ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <header>
+      <div class="main__hero"></div>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Cities" class="section">
+      <h2 class="one">Cities</h2>
+      <div class="card__container">
+        <div class="card">
+          <div class="card__content">
+            <div id="image1" class="card__image"></div>
+            <button>Barcelona</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div id="image2" class="card__image"></div>
+            <button>Alicante</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div id="image3" class="card__image"></div>
+            <button>Valencia</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div id="image4" class="card__image"></div>
+            <button>Cartagena</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section2" data-nav="Food" class="second__section section">
+      <h2 class="two">Food</h2> 
+      <div class="paella__image"></div>
+      <p> While everybody knows paella is Spain's most famous culinary export, fewer people know Valencia is where
+        the dish originates from.
+        And even fewer folks know paella comes from the tiny pueblo of El Palmar, rather than the ancient city of
+        Valencia itself. <button class="readMore">Read more.. </button> </p>
+    </section>
+
+
+    <section id="section3" data-nav="Must See" class="third__section section">
+      <h2 class="three">Top 4 things to see</h2>
+      <div class="card__container">
+        <div class="card">
+          <div class="card__content">
+            <div id="image5" class="card__image"></div>
+            <button>Sagrada Familia</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div id="image6" class="card__image"></div>
+            <button>Oceanografico</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div id="image7" class="card__image"></div>
+            <button>Castillo de Santa Barbara</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__content">
+            <div id="image8" class="card__image"></div>
+            <button>Roman Theatre Museum</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section4" data-nav="Subcribe" class="fourth__section section">
+      <div class="form">
+        <h2>Subscribe and receive exclusive travel tips, giveaways and more! </h2>
+        <form class="form-inline">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email" name="email">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <p>&copy Udacity Landing_page Project by Sabrina Roestenburg</p>
+    </footer>
+  </div>
+
+  <!-- load javascript -->
+  <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
