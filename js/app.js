@@ -25,15 +25,15 @@ function highlightItem() {
     let selectedItem = window.location.hash.replace("#", "");
     makeMenu(selectedItem);
 
-    let sections = document.getElementsByTagName("section");
-    for (const section of sections) {
-        if (section.classList.contains("active") && section.id != selectedItem) {
-            section.classList.remove("active");
-        }
-        if (section.id == selectedItem && !section.classList.contains("active")) {
-            section.classList.add("active");
-        }
-    }
+    // let sections = document.getElementsByTagName("section");
+    // for (const section of sections) {
+    //     if (section.classList.contains("active") && section.id != selectedItem) {
+    //         section.classList.remove("active");
+    //     }
+    //     if (section.id == selectedItem && !section.classList.contains("active")) {
+    //         section.classList.add("active");
+    //     }
+    // }
 }
 
 // scroll to show topBtn and show menu with hightled section on the screen
@@ -52,8 +52,15 @@ function showTopBtnAndStickyNavbar() {
 
     let sections = document.getElementsByTagName("section");
     for (const section of sections) {
-        if (section.getBoundingClientRect().top <= midscreen) {
+        if ((section.getBoundingClientRect().top >= 0 && section.getBoundingClientRect().top <= midscreen) || 
+            (section.getBoundingClientRect().top < midscreen && section.getBoundingClientRect().bottom > midscreen)) {
             highlightMenu(section.getAttribute('data-nav'));
+            if (!section.classList.contains("active")) {
+                section.classList.add("active");
+            }
+        }
+        else if (section.classList.contains("active")) {
+            section.classList.remove("active");
         }
     }
 }
@@ -78,7 +85,6 @@ goToTopbutton.addEventListener("click", scrollToTop);
 function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-
 }
 
 

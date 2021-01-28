@@ -1,7 +1,9 @@
 
-
-
+html {
+    scroll-behavior: smooth;
+}
 /* ---- Base Rules ---- */
+
 body {
     background-color: white;
     margin: 0;
@@ -26,7 +28,11 @@ body {
 }
 
 li.active{
-    border-bottom: 4px solid pink;
+    background-color: rgb(238, 211, 112);
+    
+}
+.active{
+    background-color:#dee7fa;
 }
 
 .sticky {
