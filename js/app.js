@@ -6,7 +6,6 @@ highlightItem();
 // draw the menu based on the sections in the page
 function makeMenu(selectedSection) {
     let sections = document.getElementsByTagName("section");
-
     let navBarList = "";
     for (let i = 0; i < sections.length; i++) {
         let activeClass = "";
