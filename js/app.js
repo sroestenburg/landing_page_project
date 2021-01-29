@@ -1,4 +1,6 @@
-// navigation menu
+
+const midscreen = window.innerHeight / 2;
+
 highlightItem();
 
 // draw the menu based on the sections in the page
@@ -7,7 +9,7 @@ function makeMenu(selectedSection) {
 
     let navBarList = "";
     for (let i = 0; i < sections.length; i++) {
-        var activeClass = "";
+        let activeClass = "";
         if (selectedSection == sections[i].getAttribute('id')) {
             activeClass = "active";
         }
@@ -24,21 +26,10 @@ window.onhashchange = highlightItem;
 function highlightItem() {
     let selectedItem = window.location.hash.replace("#", "");
     makeMenu(selectedItem);
-
-    // let sections = document.getElementsByTagName("section");
-    // for (const section of sections) {
-    //     if (section.classList.contains("active") && section.id != selectedItem) {
-    //         section.classList.remove("active");
-    //     }
-    //     if (section.id == selectedItem && !section.classList.contains("active")) {
-    //         section.classList.add("active");
-    //     }
-    // }
 }
 
 // scroll to show topBtn and show menu with hightled section on the screen
 document.addEventListener("scroll", showTopBtnAndStickyNavbar);
-let midscreen = window.innerHeight / 2;
 
 function showTopBtnAndStickyNavbar() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -86,6 +77,7 @@ function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
 
 
 

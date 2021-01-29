@@ -2,12 +2,13 @@
 
 .fourth__section{
     grid-area: sc4;
-    
+    height: 350px;
 }
+
 .form{
     display: flex;
-    flex-direction: column;
-    margin: 40px auto;
+    flex-direction: column; 
+    margin-top: 30px;
 }
  
 .form h2{
@@ -47,8 +48,20 @@
     cursor: pointer;
 }
 
+
 /* landscape phones*/
 @media (min-width: 567px)and (max-width: 767px){
+
+    .fourth__section{
+        grid-area: sc4;
+        height: 350px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column; 
+        margin-top: 100px;
+    }
 
     #email{
         width: 200px;
@@ -57,23 +70,22 @@
     .form-inline {
         flex-direction: column;
         width: 100%;
-        text-align: center;
-        
+        text-align: center;    
     }
 }
 
 /* tablets*/
 @media (min-width: 768px)and (max-width: 991px){
     .fourth__section{
-        grid-area: sc4;
-        margin-bottom: 60px;
+        grid-area: sc4; 
+        height: 500px;   
     }
     
     .form{
         display: flex;
         flex-direction: column;
         width: 80%;
-        margin: 100px auto;     
+        margin: 100px auto 0;     
     }
     
     #email{
@@ -93,14 +105,14 @@
     
     .fourth__section{
         grid-area: sc4;
-        margin-bottom: 50px;
+        height: 600px;
     }
 
     .form{
         display: flex;
         flex-direction: column;
         width: 80%;
-        margin: 80px auto;     
+        margin: 150px auto 0;     
     }
     
     #email{
@@ -115,8 +127,7 @@
     .form-inline {
         flex-direction: column;
         width: 100%;
-        text-align: center;
-        
+        text-align: center;  
     }
 }
 
@@ -124,14 +135,14 @@
 
     .fourth__section{
         grid-area: sc4;
-        margin-bottom: 50px;
+        height: 500px;
     }
 
     .form{
         display: flex;
         flex-direction: column;
         width: 80%;
-        margin: 80px auto;     
+        margin: 150px auto 0;     
     }
     
     .form h2{
@@ -151,6 +162,7 @@
     #email{
         width: 400px;
     }
+    
     .form-inline label {
         margin: 5px 5px 5px 0;
         font-family: 'Merriweather', serif;
