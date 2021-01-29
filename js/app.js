@@ -77,6 +77,6 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-
+window.onresize = function(){window.location.reload();}
 
 

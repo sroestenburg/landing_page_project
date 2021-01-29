@@ -1,0 +1,54 @@
+.socialMedia{
+    margin: 50px 0 100px;
+}
+
+.socialMedia h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;    
+}
+  
+.fa {
+    padding: 0;
+    font-size: 20px;
+    width: 20px;
+    text-decoration: none;
+    color:#797069;    
+}
+
+/* large devices*/
+@media (min-width: 992px)and (max-width: 1199px){
+    .socialMedia{
+        margin: 100px 0 100px;
+    }
+
+    .socialMedia h3{
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+        color:#fff;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1200px){
+    .socialMedia h3{
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+        color:#fff;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+
