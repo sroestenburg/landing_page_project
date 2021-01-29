@@ -26,6 +26,13 @@
     color:#797069;    
 }
 
+/* tablets*/
+@media (min-width: 768px)and (max-width: 991px){
+    .socialMedia{
+        margin: 100px 0 150px;
+    }
+}
+
 /* large devices*/
 @media (min-width: 992px)and (max-width: 1199px){
     .socialMedia{
